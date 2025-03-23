@@ -25,6 +25,7 @@ html, body {
 .hero h1 {
     font-size: 48px;
     margin-bottom: 15px;
+    text-shadow: 3px 3px 10px yellow;
 }
 
 .hero p {
@@ -87,6 +88,7 @@ html, body {
     font-weight: bold;
     color: white;
     margin-bottom: 15px;
+    text-shadow: 3px 3px 10px yellow;
 }
 
 .about-list {
@@ -163,6 +165,7 @@ html, body {
     color: White;
     margin-bottom: 15px;
     margin-right: 100px;
+    text-shadow: 3px 3px 10px yellow;
 }
 
 .feature-content p {
@@ -288,6 +291,7 @@ html, body {
     color: white;
     margin-bottom: 15px;
     margin-left: 100px;
+    text-shadow: 3px 3px 10px yellow;
 }
 
 .community-content p {
@@ -396,6 +400,7 @@ html, body {
     font-size: 48px;
     margin-bottom: 15px;
     color: white;
+    text-shadow: 3px 3px 10px yellow;
 }
 
 .help-container p {
