@@ -1,0 +1,123 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Hero Section */
+.features-hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #2a2f3b,  #357a38);
+    color: white;
+}
+
+.features-hero h1 {
+    font-size: 3rem;
+    animation: fadeInDown 1s ease-in-out;
+    text-shadow: 3px 3px 10px yellow;
+}
+
+.features-hero p {
+    font-size: 26px;
+    color: #357a38;
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    opacity: 0.9;
+    margin-top: 10px;
+}
+
+/* Feature Section */
+.feature-section {
+    padding: 50px 10%;
+}
+
+/* Feature Box */
+.feature-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Left Content */
+.feature-left {
+    width: 50%;
+    text-align: left;
+}
+
+.feature-left h2 {
+    font-size: 35px;
+    color: #ff5722;
+}
+
+.feature-left p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #555;
+}
+
+.cta-btn {
+    background: linear-gradient(130deg, #cc5200, #007bff);
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.cta-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(130deg, #ff5722, #007bff);
+}
+
+/* Right Content */
+.feature-right {
+    width: 45%;
+}
+.feature-right p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #555;
+}
+.feature-right h2 {
+    font-size: 35px;
+    color: #ff5722;
+}
+
+.feature-right img {
+    width: 100%; /* Make sure it scales properly */
+    max-width: 450px; /* Moderate size for uniformity */
+    height: 250px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensures image fills without distortion */
+    border-radius: 10px;
+    display: block; /* Prevent extra spacing issues */
+    margin: auto; /* Center the image */
+}
+
+
+/* Animations */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
