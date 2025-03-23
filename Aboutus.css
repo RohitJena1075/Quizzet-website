@@ -1,0 +1,132 @@
+/* General Styling */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 10%;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Backgrounds */
+.quizzet-bg { background: linear-gradient(135deg, #2a2f3b, #357a38); }
+.skills-bg { background: linear-gradient(135deg, orange, rgb(81, 53, 2)); }
+.advantages-bg { background: linear-gradient(135deg,  #2a2f3b, #357a38); }
+.connect-bg { background: linear-gradient(135deg, orange, rgb(81, 53, 2)); }
+
+/* Section Layout */
+.about-section .left {
+    width: 40%;
+    text-align: left;
+    animation: fadeInLeft 1s ease-in-out;
+    color: white;
+}
+
+.about-section .right {
+    width: 40%;
+    text-align: left;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    animation: fadeInRight 1s ease-in-out;
+}
+
+.about-section .right ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.about-section .right ul li {
+    font-size: 1.2rem;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+
+/* Optional: Add Icons to the List */
+.about-section .right ul li::before {
+    content: "✔"; /* Change to emoji or icon if needed */
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #ffcc00;
+}
+
+/* Headings */
+.about-section h2 {
+    font-size: 45px;
+    text-shadow: 3px 3px 10px yellow;
+}
+
+.about-section h3 {
+    font-size: 1.6rem;
+    opacity: 0.8;
+    font-weight: bold;
+    color: #357a38;
+    background-color: aliceblue;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+    text-shadow: 3px 3px 10px yellow;
+}
+
+.skill-item i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+/* Button Animations */
+.cta-btn {
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(130deg , #cc5200, #007bff);
+    border-radius: 8px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.cta-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(130deg , #ff5722, #007bff);
+}
+
+/* Bubble Effect */
+.bubble {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: floatBubble 6s infinite ease-in-out;
+}
+
+@keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
