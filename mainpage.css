@@ -1,0 +1,499 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    background: linear-gradient(135deg, #2a2f3b, #357a38);
+    color: white;
+}
+
+/* Hero Content */
+.hero-content {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 28px;
+    margin-bottom: 25px;
+    background-color: #c9e1cd;
+    color: #357a38;
+    font-weight: bold;
+}
+
+/* CTA Button */
+.cta-btn {
+    background:linear-gradient(130deg , #cc5200, #007bff);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.cta-btn:hover {
+    background:linear-gradient(130deg , #cc5200, #007bff);
+    transform: scale(1.05);
+}
+
+/* Hero Image */
+.hero-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* About Section */
+.about-section {
+    background: linear-gradient(135deg, orange, rgb(81, 53, 2));
+    color: white;
+    text-align: left;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    width: 100%;
+}
+
+.about-text {
+    width: 700px;
+}
+
+.about-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.about-list {
+    list-style: none;
+    padding: 0;
+}
+
+.about-list li {
+    font-size: 18px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.about-list li span {
+    font-weight: bold;
+    color: #357a38;
+    margin-right: 10px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background:linear-gradient(130deg , #cc5200, #007bff);
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background:linear-gradient(130deg , #cc5200, #007bff);
+    transform: scale(1.05);
+}
+
+
+.about-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+/* Features Section */
+.feature-section {
+    background: #f9f9f9;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #2a2f3b, #357a38);
+}
+
+.feature-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+/* Feature Content */
+.feature-content {
+    flex: 1;
+    max-width: 1100px;
+    text-align: left;
+}
+
+.feature-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: White;
+    margin-bottom: 15px;
+    margin-right: 100px;
+}
+
+.feature-content p {
+    font-size: 28px;
+    color: #357a38;
+    margin-bottom: 25px;
+    font-weight: bold;
+    background-color: #c9e1cd;
+    margin-right: 100px;
+}
+
+/* Buttons Section */
+.feature-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Button Styles */
+.feature-btn {
+    padding: 14px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: none;
+}
+
+.feature-btn.primary {
+    background:linear-gradient(130deg , #cc5200, #007bff);
+    color: white;
+}
+
+.feature-btn.primary:hover {
+    background:linear-gradient(130deg , #cc5200, #007bff);
+    transform: scale(1.05);
+}
+
+.feature-btn.secondary {
+    background:linear-gradient(130deg , #cc5200, #007bff);
+    color: white;
+}
+
+.feature-btn.secondary:hover {
+    background:linear-gradient(130deg , #cc5200, #007bff);
+    transform: scale(1.05);
+}
+
+.feature-btn.outline {
+    background:linear-gradient(130deg , #cc5200, #007bff);
+    color: white;
+}
+
+.feature-btn.outline:hover {
+    color: white;
+    transform: scale(1.05);
+
+}
+
+/* Feature Image */
+.feature-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 100px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .feature-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature-content {
+        max-width: 100%;
+    }
+
+    .feature-buttons {
+        justify-content: center;
+    }
+
+    .feature-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .feature-image img {
+        max-width: 80%;
+    }
+}
+
+
+/* Community Section Styles */
+.community-section {
+    background: linear-gradient(135deg, orange, rgb(81, 53, 2));
+    padding: 80px 20px;
+}
+
+.community-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+/* Community Content */
+.community-content {
+    flex: 1;
+    max-width: 1200px;
+    text-align: left;
+
+}
+
+.community-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+    margin-left: 100px;
+}
+
+.community-content p {
+    font-size: 28px;
+    color: #357a38;
+    font-weight: bold;
+    background-color: #c9e1cd;
+    margin-bottom: 25px;
+    margin-left: 100px;
+}
+
+/* Buttons Section */
+.community-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    gap: 15px;
+}
+
+/* Button Styles */
+.community-btn {
+    padding: 14px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: none;
+}
+
+.community-btn.primary {
+    background:linear-gradient(130deg , #cc5200, #007bff);
+    color: white;
+}
+
+.community-btn.primary:hover {
+    background:linear-gradient(130deg , #cc5200, #007bff);
+    transform: scale(1.05);
+}
+
+.community-btn.secondary {
+    background:linear-gradient(130deg , #cc5200, #007bff);
+    color: white;
+}
+
+.community-btn.secondary:hover {
+    background:linear-gradient(130deg , #cc5200, #007bff);
+    transform: scale(1.05);
+}
+
+/* Community Image */
+.community-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 100px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .community-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .community-content {
+        max-width: 100%;
+    }
+
+    .community-buttons {
+        justify-content: center;
+    }
+
+    .community-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .community-image img {
+        max-width: 80%;
+    }
+}
+
+
+/* Help Section Layout */
+.help-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: linear-gradient(135deg, #2a2f3b, #357a38);
+    color: white;
+    padding: 60px 10%;
+    gap: 80px; /* Proper space between Help and FAQ */
+}
+
+/* Help Us Section (Left Side) */
+.help-container {
+    width: 40%;
+    max-width: 1200px;
+    text-align: left;
+}
+
+/* Help Us Title & Text */
+.help-container h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.help-container p {
+    font-size: 28px;
+    color: #357a38;
+    font-weight: bold;
+    background-color: #c9e1cd;
+    margin-bottom: 25px;
+}
+
+/* Help Buttons - Flex Display */
+.help-buttons {
+    display: flex;
+    gap: 15px;
+
+}
+
+/* Button Styling */
+.help-btn {
+    background:linear-gradient(130deg , #cc5200, #007bff);
+    color: white;
+    padding: 14px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    flex: 1; /* Make buttons flexible */
+
+}
+
+.help-btn:hover {
+    background:linear-gradient(130deg , #cc5200, #007bff);
+    transform: scale(1.05);
+}
+
+/* FAQ Section (Right Side) */
+.faq-container {
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+    margin-left: 100px;
+}
+
+/* FAQ Items */
+.faq-item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 15px;
+}
+
+/* FAQ Question */
+.faq-question {
+    background: none;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Remove hover background */
+.faq-question:hover {
+    background: none;
+}
+
+/* FAQ Answer */
+.faq-answer {
+    display: none;
+    font-size: 16px;
+    padding: 12px;
+    color: #f1f1f1;
+    align-items:baseline;
+}
+
+/* Prevent question size change */
+.faq-item.active .faq-question {
+    font-weight: bold;
+}
+
+/* Dropdown Toggle (+ sign) */
+.faq-toggle {
+    font-size: 22px;
+    transition: transform 0.3s ease;
+}
+
+/* Rotate + when active */
+.faq-question.active .faq-toggle {
+    transform: rotate(45deg);
+}
+
+/* Show More Button */
+.show-more-btn {
+    display: block;
+    margin: 30px auto 0;
+    text-align: center;
+}
+
