@@ -195,6 +195,10 @@ html, body {
     text-align: center;
     border: none;
 }
+.feature-btn a{
+    text-decoration: none;
+    color: white;
+}
 
 .feature-btn.primary {
     background:linear-gradient(130deg , #cc5200, #007bff);
