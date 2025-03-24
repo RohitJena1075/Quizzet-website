@@ -44,9 +44,9 @@ body {
     align-items: center;
     padding: 30px;
     margin-top: 20px 0;
-    margin-bottom : 20px;
+    margin-bottom : 30px;
     border-radius: 12px;
-    box-shadow: 0px 8px 16px rgba(254, 0, 0, 0.1);
+    box-shadow: 0px 8px 16px rgb(240, 192, 104);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
