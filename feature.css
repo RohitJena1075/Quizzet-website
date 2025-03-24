@@ -34,6 +34,7 @@ body {
 /* Feature Section */
 .feature-section {
     padding: 50px 10%;
+
 }
 
 /* Feature Box */
@@ -41,16 +42,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: white;
     padding: 30px;
-    margin: 20px 0;
+    margin-top: 20px 0;
+    margin-bottom : 20px;
     border-radius: 12px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 8px 16px rgba(254, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .feature-box:hover {
-    transform: scale(1.02);
+    transform: scale(1.06);
     box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -62,14 +63,15 @@ body {
 
 .feature-left h2 {
     font-size: 35px;
-    color: #ff5722;
+    color:#ff5722;
 }
 
 .feature-left p {
     font-size: 20px;
     font-weight: bold;
     margin-top: 10px;
-    color: #555;
+    color:#357a38;
+    background: #f8f8f8;
 }
 
 .cta-btn {
@@ -98,11 +100,12 @@ body {
     font-size: 20px;
     font-weight: bold;
     margin-top: 10px;
-    color: #555;
+    color:#357a38;
+    background: #f8f8f8;
 }
 .feature-right h2 {
     font-size: 35px;
-    color: #ff5722;
+    color:#ff5722;
 }
 
 .feature-right img {
@@ -121,3 +124,4 @@ body {
     from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
