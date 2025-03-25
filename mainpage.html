@@ -45,8 +45,8 @@
                 </div>
             </div>
         
-            <a href="#community" class ="btn">Community</a>
-            <a href="#help" class="btn">Help</a>
+            <a href="community.html" class ="btn">Community</a>
+            <a href="help.html" class="btn">Help</a>
         </nav>
         
         
@@ -211,7 +211,14 @@
     // Scroll to top of the page when the page is reloaded
 
     history.scrollRestoration = "manual";
-
+    document.getElementById("search-btn").addEventListener("click", function() {
+    let query = document.getElementById("search-input").value.trim();
+    if (query) {
+        window.location.href = `#`;
+    } else {
+        alert("Please enter a search term");
+    }
+});
 
 </script>    
     

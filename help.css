@@ -66,8 +66,8 @@ body {
 }
 
 .help-box {
-    width: 300px;
-    height:170px;
+    width: 350px;
+    max-width: 35%;
     background: white;
     padding: 10px;
     border-radius: 10px;
@@ -92,12 +92,13 @@ body {
     transform: scale(1.05);
 }
 .help-box h3 {
-    font-size: 22px;
+    font-size: 24px;
     color: #357a38;
 }
-.help-box p {
-    font-size: 16px;
-    opacity: 0.8;
+
+.help-box p{
+    font-size: 20px;
+    font-weight: bold;
 }
 
 /* Responsive */
@@ -148,4 +149,114 @@ body {
 
 .search-container2 .search-btn:hover svg {
     transform: scale(1.2);
+}
+
+
+/* Community Categories */
+.community-category {
+    padding: 50px 10%;
+    text-align: center;
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.community-category h2 {
+    font-size: 31px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #f16305;
+}
+
+/* Community Container */
+.community-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+/* Community Box */
+.community-box {
+    flex: 1;
+    min-width: 250px;
+    max-width: 25%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgb(240, 192, 104);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.community-box h3 {
+    font-size: 24px;
+    color: #357a38;
+    text-align: center;
+    font-weight: bold;
+}
+
+.community-box p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.community-box a{
+    text-decoration: none;
+}
+
+.community-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Fire Boy Animation */
+.fire-boy-container {
+    position: absolute;
+    bottom: 12%;
+    left: 2%; /* Adjust the position */
+    width: 150px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fire-boy {
+    position: relative;
+    width: 100%;
+    height: auto;
+    animation: bounce 2s infinite ease-in-out;
+}
+
+/* Fire Boy Image */
+.fire-boy-img {
+    width: 100%;
+    height: auto;
+}
+
+/* Flames Animation */
+.flames {
+    position: absolute;
+    bottom: 0;
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(circle, orange, red, darkred);
+    border-radius: 50%;
+    animation: flamesFlicker 0.5s infinite alternate;
+}
+
+/* Bounce Animation for Fire Boy */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* Flickering Flame Effect */
+@keyframes flamesFlicker {
+    0% { transform: scale(1); opacity: 0.8; }
+    100% { transform: scale(1.2); opacity: 1; }
 }
