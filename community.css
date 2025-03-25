@@ -1,0 +1,180 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Hero Section */
+.community-hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #357a38, #2a2f3b);
+    color: white;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.community-hero h1 {
+    font-size: 3rem;
+    animation: fadeInDown 1s ease-in-out;
+    text-shadow: 3px 3px 10px yellow;
+}
+
+.community-hero p {
+    font-size: 26px;
+    text-align: center;
+    padding: 10px 20px;
+    opacity: 0.9;
+    margin-top: 10px;
+}
+
+/* Search Bar */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#search-input {
+    padding: 12px;
+    width: 300px;
+    border: 2px solid #f16305;
+    border-radius: 8px 0 0 8px;
+    font-size: 16px;
+}
+
+.search-btn {
+    background: #f16305;
+    color: white;
+    padding: 12px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 8px 8px 0;
+    transition: background 0.3s ease;
+}
+
+.search-btn:hover {
+    background: #cc5200;
+}
+
+/* Community Categories */
+.community-category {
+    padding: 50px 10%;
+    text-align: center;
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.community-category h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #f16305;
+}
+
+/* Community Container */
+.community-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Community Box */
+.community-box {
+    flex: 1;
+    min-width: 300px;
+    max-width: 35%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgb(240, 192, 104);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.community-box h3 {
+    font-size: 24px;
+    color: #357a38;
+    text-align: center;
+    font-weight: bold;
+}
+
+.community-box p {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.community-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Trending Topics */
+.trending-topics {
+    padding: 50px 10%;
+    text-align: center;
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.trending-topics h2 {
+    font-size: 30px;
+    color: #f16305;
+    margin-bottom: 20px;
+}
+
+.trending-topics ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.trending-topics li {
+    background: #357a38;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.trending-topics li:hover {
+    background: #f16305;
+    transform: scale(1.1);
+}
+
+/* Community Guidelines */
+.community-guidelines {
+    padding: 50px 10%;
+    text-align: center;
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.community-guidelines h2 {
+    font-size: 30px;
+    color: #f16305;
+    margin-bottom: 20px;
+}

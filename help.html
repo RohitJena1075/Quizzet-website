@@ -18,37 +18,36 @@
     </div>
     
 
-    <!-- Hero Section -->
-    <div class="help-hero">
-        <h1>We're here to help</h1>
-        <input type="text" placeholder="Search">
+<!-- Hero Section -->
+<div class="help-hero">
+    <div class="search-container2">
+        <input type="text" id="search-input2" placeholder="Search...">
+        <button class="search-btn" id="search-btn2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+            </svg>
+        </button>
     </div>
+</div>
+
 
     <!-- Help Categories -->
     <div class="help-container">
-        <div class="help-box">
-            <a href="#"><h3>My Account</h3></a>
-            <p>Create and manage your account</p>
+           <div class="help-box">
+            <a href="#"> <h3>Contacts</h3></a>
+            <p><h4>We want to hear you</h4></p>
         </div>
+
         <div class="help-box">
-            <h3>Email Campaigns</h3>
-            <p>Engage with contacts using email tools</p>
+            <a href="#"> <h3>Report and Isssue</h3></a>
+            <p><h4>Report issues quickly and we’ll resolve them ASAP</h4></p>
         </div>
+
         <div class="help-box">
-            <h3>WhatsApp & SMS</h3>
-            <p>Send targeted messages to your contacts</p>
-        </div>
-        <div class="help-box">
-            <h3>Transactional Emails</h3>
-            <p>Send one-to-one emails with tracking</p>
-        </div>
-        <div class="help-box">
-            <h3>Contacts</h3>
-            <p>Manage and segment your contacts</p>
-        </div>
-        <div class="help-box">
-            <h3>Automation</h3>
-            <p>Automate your marketing efforts</p>
+            <a href="#"> <h3>FAQ's</h3></a>
+            <p><h4>Your questions, our answers—everything you need to know</h4></p>
         </div>
     </div>
     <div id="footer-placeholder"></div>
@@ -59,6 +58,16 @@
         window.scrollTo(0, 0);
     </script>
 
+<script>
+    document.getElementById("search-btn2").addEventListener("click", function() {
+    let query = document.getElementById("search-input2").value.trim();
+    if (query) {
+        window.location.href = `#`;
+    } else {
+        alert("Please enter a search term");
+    }
+});
 
+</script>
 </body>
 </html>

@@ -14,6 +14,17 @@ body {
     background: linear-gradient(135deg, #357a38, #2a2f3b);
     color: white;
 }
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 .quiz-hero h1 {
     font-size: 3rem;
     animation: fadeInDown 1s ease-in-out;
