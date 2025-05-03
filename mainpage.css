@@ -219,6 +219,11 @@ html, body {
 .feature-btn.outline {
     background:linear-gradient(130deg , #cc5200, #007bff);
     color: white;
+    text-decoration: none;
+}
+
+.feature-btn outline a{
+    text-decoration: none;
 }
 
 .feature-btn.outline:hover {
