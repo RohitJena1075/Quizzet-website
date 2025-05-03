@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take a Quiz</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <h2>Quiz Menu</h2>
+        <ul>
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="#" id="categories-menu">📚 Categories</a></li>
+            <li><a href="#">🔖 Saved Questions</a></li>
+        </ul>
+    </nav>
+
+    <!-- Quiz Container -->
+    <div class="quiz-container">
+        <header>
+            <h1>🧠 Quiz</h1>
+            <div class="timer">⏳ Time Left: <span id="time-left">30:00</span></div>
+        </header>
+
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+
+        <!-- Questions Section -->
+        <div class="question-box">
+            <h2 id="question">Loading question...</h2>
+            <div class="options" id="options"></div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="quiz-buttons">
+            <button id="prev-btn">⬅ Previous</button>
+            <button id="next-btn">Next ➡</button>
+            <button id="submit-btn">Submit</button>
+        </div>
+    </div>
+
+    <!-- Result Popup -->
+    <div id="result-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2>Your Results</h2>
+            <p id="result-text"></p>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
