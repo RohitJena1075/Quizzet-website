@@ -3,7 +3,7 @@
 $host = 'localhost'; // Database host
 $dbname = 'quizzet'; // Database name
 $username = 'root'; // Database username
-$password = ''; // Database password
+$password = 'Rohit@1075'; // Database password
 
 // Create a connection to the database
 $conn = new mysqli($host, $username, $password, $dbname);

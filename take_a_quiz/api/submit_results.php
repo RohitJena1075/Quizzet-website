@@ -1,7 +1,7 @@
 <!-- filepath: c:\Users\rjena\OneDrive\Desktop\Project\Quizzet-website\take_a_quiz\api\submit_results.php -->
 <?php
 header('Content-Type: application/json');
-include '../config.php'; // Include the database configuration
+include '/take_a_quiz/config.php'; // Include the database configuration
 
 function insertQuizResult($conn, $username, $score) {
     $stmt = $conn->prepare("INSERT INTO quiz_results (username, score) VALUES (?, ?)");
